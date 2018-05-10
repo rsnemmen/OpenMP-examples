@@ -39,8 +39,8 @@ int main(int argc, char *argv[]) {
     sscanf(argv[1], "%i", &ntarget); 
 
     // dynamically allocate arrays
-	xa = (int *)malloc(sizeof(float)*ntarget); 
-	ya = (int *)malloc(sizeof(float)*ntarget); 
+	xa = (float *)malloc(sizeof(float)*ntarget); 
+	ya = (float *)malloc(sizeof(float)*ntarget); 
 
 	// Equatorial coordinates of accepted events
 	memset(xa, 0, sizeof(int)*ntarget); // initializes array to zeroes
